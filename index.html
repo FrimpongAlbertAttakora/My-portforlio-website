@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>myPortfolioWebsite</title>
+</head>
+<body>
+    <header id = 'head'>
+        <h1 id = 'h1_1'>
+            Hello, I'am <span>Albert Attakora Frimpong</span>.
+            <br>
+            I'am a front-end <span>Web Developer</span>.
+        </h1>
+
+        <h2>
+            <button id="btn">CONTACT ME</button>
+            <p>
+                <a><i class="far fa-envelope"></i></a>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+            </p>
+        </h2>
+    </header>
+
+    <nav id="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+            <a href="#"><li id="abt">ABOUT</li></a>
+            <a href="#"><li id="port">PORTFOLIO</li></a>
+            <a href="#"><li id="skill">SKILLS</li></a>
+            <a href="#"><li id="cont">CONTACT</li></a>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <section id="about">
+        <article id="about_1">
+            <hr class="bar">
+            <h2>ABOUT</h2>
+            <hr class="bar">
+        </article>
+        <article id="about_2">
+            <div>FAST</div>
+            <div>RESPONSIVE</div>
+            <div>INTRUCT</div>
+            <div>WAKE</div>
+        </article>
+        <article id="about_3">
+            <div>HELP</div>
+            <div>SAVIOR</div>
+        </article>
+
+    </section>
+
+    
+    <section id="portfolio">
+        <article id="about_1">
+            <hr style="background-color: #718093" class="bar">
+            <h2 style="color: #718093">PORTFOLIO</h2>
+            <hr style="background-color: #718093" class="bar">
+        </article>
+        <article>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </article>
+    </section>
+
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+    </section>
+
+
+    <footer id="foot">
+        <h2>FOOTER</h2>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/315ea4ae61.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
