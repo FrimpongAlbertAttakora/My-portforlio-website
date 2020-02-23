@@ -20,6 +20,7 @@ var footer = document.getElementById("foot");
 var sticky = about.offsetTop;
 var sticky2 = portfolio.offsetTop;
 var sticky3 = skills.offsetTop;
+var sticky4 = footer.offsetTop;
 
 // Get the header page
 var heaDer = document.getElementById("head");
@@ -53,6 +54,13 @@ function myFunction() {
         } else {
           skill.classList.remove("skill1");
         }
+
+      if(window.pageYOffset >= sticky4) {
+          cont.classList.add("cont1");
+          skill.classList.remove("skill1");
+        } else {
+          cont.classList.remove("cont1");
+        }
         
   }
    else { 
@@ -62,11 +70,22 @@ function myFunction() {
 
 
 /* open and close */
+//window.onload(document.getElementById('side-menu').style.visibility = 'hidden');
 
 function openSlideMenu(){
   document.getElementById('side-menu').style.width = '250px';
   document.getElementById('main').style.marginLeft = '250px';
 }
+
+function closeSideMenu(){
+  document.getElementById('side-menu').style.width = '0';
+  document.getElementById('main').style.marginLeft = '0';
+}
+
+// Close the side bar when the body is clicked
+
+var sideClose = document.getElementById('container');
+sideClose.addEventListener('dblclick', closeSideMenu);
 
 function closeSideMenu(){
   document.getElementById('side-menu').style.width = '0';
